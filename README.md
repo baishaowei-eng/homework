@@ -71,7 +71,9 @@
 ```
    
   ## 4.实验截图
-  https://github.com/baishaowei-eng/school/blob/main/img/imgs.png
+   
+   https://github.com/baishaowei-eng/homework/tree/main/jietu
+   
   ## 5.实验感想
 
   1. 通过这个实验中学习到了如何乱序的排版通过循环判断语句进行对古诗句的有序排版。
