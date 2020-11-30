@@ -61,7 +61,41 @@
 		
   
   ```
-  2. 通过mains类进行调用输出
+  2. 通过FindWord类可以获取字数和词的个数，主要是通过获取文件的字节个数，然后进行类型强转为整形，在通过while循坏和判断语句进行依次找到相应的内容，最后关闭输入输出字节流。
+    ```
+                File files = new File("D:\\homework\\import.txt");
+		FileInputStream fis=new FileInputStream(files);
+		ByteArrayOutputStream bos=new ByteArrayOutputStream();
+		int len;
+		byte[] data = null;
+		byte[] buffer = new byte[(int) files.length()];
+
+		while ((len=fis.read(buffer))!=-1){
+		    bos.write(buffer,0,len);
+		}
+
+		data = bos.toByteArray();
+		String str = new String(data);
+
+		int count=0;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("输入你要查找的字或词：");
+		char o = sc.next().charAt(0);
+		char[] ch =str.toCharArray();
+		for(int i=0;i<ch.length;i++){
+		    if(o==ch[i]){
+		        count++;
+		    }
+
+		}
+
+		System.out.println("你输入的字或词在诗中出现过"+count+"次。");
+		System.out.println("----------------------------");
+		    fis.close();
+		    bos.close();
+	}
+    ```
+  3. 通过mains类进行调用输出
   
   ```
     Student stu=new Student();
