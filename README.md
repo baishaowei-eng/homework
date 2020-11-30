@@ -62,7 +62,8 @@
   
   ```
   2. 通过FindWord类可以获取字数和词的个数，主要是通过获取文件的字节个数，然后进行类型强转为整形，在通过while循坏和判断语句进行依次找到相应的内容，最后关闭输入输出字节流。
-    ```
+   
+       ```
                 File files = new File("D:\\homework\\import.txt");
 		FileInputStream fis=new FileInputStream(files);
 		ByteArrayOutputStream bos=new ByteArrayOutputStream();
@@ -94,7 +95,7 @@
 		    fis.close();
 		    bos.close();
 	}
-    ```
+     ```
   3. 通过mains类进行调用输出
   
   ```
