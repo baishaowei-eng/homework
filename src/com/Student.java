@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 class Student {
 	public void toshow() {
-		
 		String name;							//关于学生的姓名
 		int code;							    //关于学生的编号
 		String sexy;							//关于学生的性别
@@ -26,7 +25,9 @@ class Student {
 	    grade=sc.next();
 		System.out.println("专业：");
 	    major=sc.next();
+	   
 	    System.out.println("姓名："+name+"编号："+code+"性别："+sexy+"年龄："+age+"班级："+grade+"专业："+major);
+	
 		
 	}
 	
